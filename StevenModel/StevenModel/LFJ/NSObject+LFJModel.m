@@ -27,7 +27,14 @@
         NSString *ivarName = [NSString stringWithUTF8String:ivar_getName(ivar)];
         NSString *ivarType = [NSString stringWithUTF8String:ivar_getTypeEncoding(ivar)];
         NSString *ivarKey = [ivarName substringFromIndex:1];
-        id value = dict[ivarKey];
+        NSString *key = ivarKey;
+        if ([self respondsToSelector:@selector(exchangekeyMap)]) {
+            id idSelf = self;
+            if (!k_LFJ_IsEmptyStr([idSelf exchangekeyMap][ivarKey])) {
+                key = [idSelf exchangekeyMap][ivarKey];
+            }
+        }
+        id value = dict[key];
         //如果值是字典的话看能不能转model
         if ([value isKindOfClass:[NSDictionary class]]) {
             ivarType = [ivarType stringByReplacingOccurrencesOfString:@"\"" withString:@""];

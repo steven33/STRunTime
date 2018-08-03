@@ -16,6 +16,9 @@
 + (NSString *)strEmptyDefaultValue{
     return @"wo shi empty";
 }
++ (NSDictionary *)keyMap{
+    return @{@"coderID":@"id"};
+}
 
 
 @end

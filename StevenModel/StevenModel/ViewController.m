@@ -28,7 +28,7 @@
     
     NSDictionary *person = @{@"name":@"你是谁",
                              @"sex": @""};
-    NSDictionary *dict = @{@"coderID":@"100",
+    NSDictionary *dict = @{@"id":@"100",
                            @"nickName": @"以梦为马",
                            @"phoneNumber": @"110",
                            @"person" : person,
