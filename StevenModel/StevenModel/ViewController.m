@@ -26,8 +26,8 @@
 
 - (void)tap{
     
-    NSDictionary *person = @{@"name":@"******",
-                             @"sex": @"男"};
+    NSDictionary *person = @{@"name":@"你是谁",
+                             @"sex": @""};
     NSDictionary *dict = @{@"coderID":@"100",
                            @"nickName": @"以梦为马",
                            @"phoneNumber": @"110",
@@ -35,14 +35,19 @@
                            @"list":@[person,person,person]
                            };
     NSArray *addarr = @[dict ,dict, dict];
+//
+//    NSMutableArray *arr = [NSMutableArray array];
+//    for (NSDictionary *item in addarr) {
+        TestModel *coding = [TestModel LFJModelWithDict:dict];
+//        [arr addObject:coding];
+//    }
+//    NSLog(@"%@",arr);
+    NSDictionary *dic =  [coding LFJModelToDic];
+    NSLog(@"%@",coding);
+    NSLog(@"%@",[coding LFJModelToJsonStr]);
     
-    NSMutableArray *arr = [NSMutableArray array];
-    for (NSDictionary *item in addarr) {
-        TestModel *coding = [TestModel LFJModelWithDict:item];
-        [arr addObject:coding];
-    }
-    NSLog(@"%@",arr);
-    
+
+
     
 }
 

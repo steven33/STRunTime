@@ -9,13 +9,27 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "StevenModel/ViewController.m"
-            timestampString = "554800656.531291"
+            filePath = "StevenModel/LFJ/LFJClassInfo.m"
+            timestampString = "554798825.728096"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "-tap"
+            startingLineNumber = "22"
+            endingLineNumber = "22">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StevenModel/LFJ/NSArray+Log.m"
+            timestampString = "554956851.409568"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "-descriptionWithLocale:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +39,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "StevenModel/LFJ/LFJClassInfo.m"
-            timestampString = "554798825.728096"
+            filePath = "StevenModel/LFJ/NSDictionary+Log.m"
+            timestampString = "554956851.4096889"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "+classInfoWithClass:"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "-descriptionWithLocale:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,11 +56,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StevenModel/LFJ/NSObject+LFJModel.m"
-            timestampString = "554800670.29379"
+            timestampString = "554968356.257257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "+LFJModelWithDict:"
             landmarkType = "7">
          </BreakpointContent>

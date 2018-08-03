@@ -9,7 +9,9 @@
 #import "NNPerson.h"
 
 @implementation NNPerson
-
++ (NSString *)strEmptyDefaultValue{
+    return @"wo shi empty";
+}
 - (NSString *)coding {
     return @"coding";
 }
