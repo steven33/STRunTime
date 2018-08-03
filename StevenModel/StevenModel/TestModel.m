@@ -9,10 +9,10 @@
 #import "TestModel.h"
 
 @implementation TestModel
-+ (NSDictionary *)arrayContainModelClass{
-    return @{@"list":@"NNPerson"};
-//    return @{@"list":[NNPerson class]};
-}
+//+ (NSDictionary *)arrayContainModelClass{
+//    return @{@"list":@"NNPerson"};
+////    return @{@"list":[NNPerson class]};
+//}
 + (NSString *)strEmptyDefaultValue{
     return @"wo shi empty";
 }

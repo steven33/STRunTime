@@ -67,6 +67,28 @@
                 }
                 // 把模型数组赋值给value
                 value = arrM;
+            }else{
+                NSString *claType = [ivarType stringByReplacingOccurrencesOfString:@"NSArray" withString:@""];
+                claType = [claType stringByReplacingOccurrencesOfString:@"<" withString:@""];
+                claType = [claType stringByReplacingOccurrencesOfString:@">" withString:@""];
+                claType = [claType stringByReplacingOccurrencesOfString:@"\"" withString:@""];
+                claType = [claType stringByReplacingOccurrencesOfString:@"@" withString:@""];
+                if (!k_LFJ_IsEmptyStr(claType)) {
+                   Class classModel = NSClassFromString(claType);
+                    if (classModel) {
+                        NSMutableArray *arrM = [NSMutableArray array];
+                        // 遍历字典数组，生成模型数组
+                        for (NSDictionary *dict in value) {
+                            // 字典转模型
+                            id model =  [classModel LFJModelWithDict:dict];
+                            [arrM addObject:model];
+                        }
+                        // 把模型数组赋值给value
+                        value = arrM;
+                    }
+
+                }
+
             }
         }
         

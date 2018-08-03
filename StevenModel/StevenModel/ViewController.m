@@ -42,13 +42,10 @@
 //        [arr addObject:coding];
 //    }
 //    NSLog(@"%@",arr);
-    NSDictionary *dic =  [coding LFJModelToDic];
     NSLog(@"%@",coding);
+    
+    NSDictionary *dic =  [coding LFJModelToDic];
     NSLog(@"%@",[coding LFJModelToJsonStr]);
-    
-
-
-    
 }
 
 

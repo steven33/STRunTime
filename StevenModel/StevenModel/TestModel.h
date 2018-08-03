@@ -13,12 +13,12 @@
 
 @interface TestModel : NSObject
 
-@property (nonatomic, strong) NNPerson *person;
-
-@property (nonatomic, copy) NSString *coderID;
-@property (nonatomic, copy) NSString *nickName;
-@property (nonatomic, copy) NSString *phoneNumber;
-@property (nonatomic, copy) NSArray <NNPerson*>*list;
+//@property (nonatomic, strong) NNPerson *person;
+//
+//@property (nonatomic, copy) NSString *coderID;
+//@property (nonatomic, copy) NSString *nickName;
+//@property (nonatomic, copy) NSString *phoneNumber;
+@property (nonatomic, copy) NSArray <NNPerson>*list;
 //
 //@property (nonatomic, assign)char  lfj1;
 //@property (nonatomic, assign)int  lfj2;

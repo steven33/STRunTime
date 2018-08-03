@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@protocol NNPerson <NSObject>
+@end
 @interface NNPerson : NSObject
 
 /** 姓名 **/

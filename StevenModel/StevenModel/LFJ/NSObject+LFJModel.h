@@ -11,10 +11,17 @@
 @optional
 /*
  **用在数组内部dic转换成model映射
+ *@property (nonatomic, copy) NSArray <NNPerson*>*list;范型映射
  *eg1: return @{@"list":@"NNPerson"};表示list字段的数组内部的dic转成NNPerson model对象
  *eg2: return @{@"list":[NNPerson class]}; 表示list字段的数组内部的dic转成NNPerson model对象(建议使用这种方式)
 */
 + (NSDictionary *)arrayContainModelClass;
+#pragma mark-------new
+/*定义
+ * @protocol CusObject <NSObject>
+   @end
+ *@property (nonatomic, copy) NSArray <NNPerson>*list;协议映射
+ */
 /*
  *当数据类型为NSString 的时候空数据的默认字符串
  */
